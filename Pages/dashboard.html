@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/dashboard.css">
+    <script src="Js/script.js" defer></script>
+    <title>BuildKL</title>
+</head>
+
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="../Logo/BK-mini.png" alt="KLDT Logo miniature">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">📊 Dashboard</a></li>
+                    <li><a href="#">📐 Prise de mesure</a></li>
+                    <li><a href="#">📄 Devis</a></li>
+                    <li><a href="#">📦 Commandes</a></li>
+                    <li><a href="#">🏗️ Chantier</a></li>
+                    <li><a href="#">🔧 SAV</a></li>
+                    <li><a href="#">⚙️ Réglages</a></li>
+                    <li><a href="#">🚪 Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="dashboard-header">
+                <div>
+                    <h1>👋 Bienvenu 👋 </h1>
+                    <p id="date-aujourd-hui"></p>
+                </div>
+                <div class="user-info">
+                    <span class="notif">🔔 <span class="notif-count">3</span></span>
+                    <span id="user-name">👤 Kévin 👤</span>
+                </div>
+            </div>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h2>🏗️ Chantiers En Cours</h2>
+                    <div class="chantier-item">
+                        <div class="chantier-info">
+                            <span>Résidence Cosco</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 65%"></div>
+                        </div>
+                    </div>
+                    <div class="chantier-item">
+                        <div class="chantier-info">
+                            <span>Commerce Polygone</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="chantier-item">
+                        <div class="chantier-info">
+                            <span>Villa Borgo</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>🚨 ALERTES</h2>
+                    <div class="alerte-item">
+                        <span class="badge-normal">Normal</span>
+                        <p>Commande Villa Némésis à faire</p>
+                    </div>
+                    <div class="alerte-item">
+                        <span class="badge-urgent">Urgent</span>
+                        <p>Planifier Grue et Livraison VI Commerce Polygone </p>
+                    </div>
+                    <div class="alerte-item">
+                        <span class="badge-important">Important</span>
+                        <p>Réunion Exceptionnelle Résidence Cosco</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>📅 Planning</h2>
+                    <div class="planning-item">
+                        <p class="planning-date">Mardi 31 Mars 2026</p>
+                        <div class="planning-heure">09:30</div>
+                        <div class="planning-content">
+                            <span class="planning-categorie chantier"></span>
+                            <p>Réunion Villa Némésis</p>
+                        </div>
+                    </div>
+                    <div class="planning-item">
+                        <p class="planning-date">Vendredi 03 Avril 2026</p>
+                        <div class="planning-heure">18:00</div>
+                        <div class="planning-content">
+                            <span class="planning-categorie chantier"></span>
+                            <p>Mesures Mr LEVEL</p>
+                        </div>
+                    </div>
+                    <div class="planning-item">
+                        <p class="planning-date">Lundi 23 Mars 2026</p>
+                        <div class="planning-heure">11:30</div>
+                        <div class="planning-content">
+                            <span class="planning-categorie chantier"></span>
+                            <p>Mesures Mme Panafieu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h2>💰Financier</h2>
+                    <canvas id="graphFinance"></canvas>
+                    <p>Situation a faire Villa Borgo 90%</p>
+                    <p>Factures en attente : 3</p>
+                    <p>CA du mois : 45 000 €</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
