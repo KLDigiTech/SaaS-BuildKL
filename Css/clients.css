@@ -1,0 +1,73 @@
+
+
+/* ===== CLIENTS ===== */
+
+/* = MAIN = */
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.header-client {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.table-clients {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-clients th {
+    font-size: 0.9rem;
+    background-color: var(--color-primary);
+    padding: 10px;
+    color: white;
+    text-align: left;
+}
+
+.table-clients td {
+    font-size: 0.8rem;
+    padding: 10px;
+    border-bottom: 1px solid #abb0b6;
+}
+
+tbody tr:hover {
+    background-color: lightgrey;
+}
+
+.table-clients th,
+.table-clients td {
+    padding-left: 15px;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    background-color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--bg-primary);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s all ease;
+}
+
+button:hover {
+    background-color: #94A3B8;
+    transform: translateY(-2px);
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}

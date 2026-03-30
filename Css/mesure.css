@@ -1,5 +1,46 @@
-/* ===== FOOTER ===== */
 
-/* ===== UTILITAIRES ===== */
 
+/* ===== MESURE ===== */
+
+/* = MAIN = */
+.main-content{
+    padding-top: 20px;
+    margin-left: 40px;
+}
+.mesure-grid{
+    display: flex;
+    align-items: flex-start;
+    gap: 150px;   
+}
+.rdv-card{
+    background-color: var(--bg-primary);
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 15px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.rdv-card:hover{
+    background-color: lightgray;
+    transform: translateY(-2px);
+}
+.rdv-jour h2,
+.rdv-jour .planning-date,
+.rdv-libre h2 {
+    padding-left: 15px;
+}
+
+.rdv-adresse {
+    color: var(--color-text);
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
 /* ===== MEDIA QUERIES ===== */
+
+@media (max-width: 1024px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {}
