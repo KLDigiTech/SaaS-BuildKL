@@ -1,4 +1,5 @@
-//date automatique
+
+// ===== DATE AUTOMATIQUE =====
 
 const dateNow = document.getElementById("date-aujourd-hui");
 const maintenant = new Date();
@@ -10,8 +11,7 @@ const dateFormatee = maintenant.toLocaleDateString("fr-FR", {
 });
 dateNow.textContent = dateFormatee;
 
-
-// graphique charts aide IA
+// ===== GRAPHIQUE FINANCIER (Chart.js) =====
 
 const ctx = document.getElementById('graphFinance');
 

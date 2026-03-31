@@ -99,7 +99,7 @@ body {
     object-fit: cover;
 }
 
-/* ===== BOUTON ===== */
+/* ===== PLanning HEURE ===== */
 
 .planning-heure {
     min-width: 50px;
@@ -118,7 +118,6 @@ body {
     cursor: pointer;
     transition: 0.3s all ease;
 }
-
 .user-info:hover {
     background-color: lightgray;
 }
@@ -133,6 +132,7 @@ body {
     width: 350px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) ;
     margin: 20px;
+    overflow: hidden;
 }
 .notif-item{
     padding: 10px 20px;

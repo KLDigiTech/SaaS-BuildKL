@@ -2,13 +2,7 @@
 
 /* ===== CLIENTS ===== */
 
-/* = MAIN = */
-
-.main-content {
-    flex: 1;
-    padding: 30px;
-    overflow-y: auto;
-}
+/* = HEADER = */
 
 .header-client {
     display: flex;
@@ -16,6 +10,8 @@
     justify-content: space-between;
     margin-bottom: 25px;
 }
+
+/* = TABLEAU = */
 
 .table-clients {
     width: 100%;
@@ -45,6 +41,8 @@ tbody tr:hover {
     padding-left: 15px;
 }
 
+/* = BOUTON = */
+
 button {
     width: 200px;
     height: 40px;
@@ -63,11 +61,3 @@ button:hover {
     background-color: #94A3B8;
     transform: translateY(-2px);
 }
-
-/* ===== MEDIA QUERIES ===== */
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 480px) {}

@@ -10,7 +10,7 @@
     padding-right: 30px;
 }
 
-/* = MAIN = */
+/* = GRILLE = */
 
 .categorie-grid h1 {
     margin-bottom: 20px;
@@ -26,10 +26,6 @@
     align-items: center;
 }
 
-.rdv-card {
-    margin: 30px;
-}
-
 .categorie {
     display: flex;
     flex-direction: column;
@@ -37,6 +33,8 @@
     gap: 15px;
     margin: 20px auto;
 }
+
+/* = CARD RDV = */
 
 .rdv-card {
     background-color: var(--bg-primary);
@@ -47,6 +45,8 @@
     margin: 10px 0;
     cursor: pointer;
 }
+
+/* = CATEGORIES = */
 
 .cat-card {
     display: flex;
@@ -74,13 +74,3 @@
     background-color: lightgray;
     transform: translateY(-2px)
 }
-
-
-
-/* ===== MEDIA QUERIES ===== */
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 480px) {}

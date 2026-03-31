@@ -13,13 +13,16 @@
     padding-right: 30px;
 }
 
-/* = MAIN = */
+/* = GRILLE PLANNING = */
 
 .mesure-grid{
     display: flex;
     align-items: flex-start;
-    gap: 150px;   
+    gap: 60px;   
 }
+
+/* = CARDS RDV = */
+
 .rdv-card{
     background-color: var(--bg-primary);
     border: 3px solid white;
@@ -34,21 +37,24 @@
     background-color: lightgray;
     transform: translateY(-2px);
 }
+
+/* = TITRES ET DATES = */
+
 .rdv-jour h2,
 .rdv-jour .planning-date,
 .rdv-libre h2 {
     padding-left: 15px;
 }
 
+.rdv-demain h2,
+.rdv-demain .planning-date {
+    padding-left: 15px;
+}
+
+/* = ADRESSE = */
+
 .rdv-adresse {
     color: var(--color-text);
     font-size: 0.8rem;
     opacity: 0.6;
 }
-/* ===== MEDIA QUERIES ===== */
-
-@media (max-width: 1024px) {}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 480px) {}
