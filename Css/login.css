@@ -106,8 +106,29 @@
     color: blue;
     text-decoration: underline;
 }
+.erreur-msg {
+    display: none;
+    background-color: #FEE2E2;
+    color: #DC2626;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    border: 1px solid #DC2626;
+    margin-top: 30px;
+}
 
-
+.input-group input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 0.75rem;
+}
+.input-group input:-webkit-autofill ~ label {
+    top: -10px;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    background: white;
+    padding: 0 5px;
+}
 /* ===== MEDIA QUERIES ===== */
 
 @media (max-width: 1024px) {}
