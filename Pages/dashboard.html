@@ -14,6 +14,9 @@
 </head>
 
 <body>
+
+    <!-- SIDEBAR -->
+
     <div class="app">
         <div class="sidebar">
             <div class="sidebar-logo">
@@ -22,29 +25,47 @@
             <div class="nav">
                 <ul>
                     <li><a href="#" class="active">📊 Dashboard</a></li>
-                    <li><a href="#">🏢 Clients</a></li>
-                    <li><a href="#">🗓️ Planning</a></li>
-                    <li><a href="#">📐 Prise de mesure</a></li>
+                    <li><a href="clients.html">🏢 Clients</a></li>
+                    <li><a href="planning.html">🗓️ Planning</a></li>
+                    <li><a href="mesure.html">📐 Prise de mesure</a></li>
                     <li><a href="#">📄 Devis</a></li>
                     <li><a href="#">📦 Commandes</a></li>
                     <li><a href="#">🏗️ Chantier</a></li>
                     <li><a href="#">🔧 SAV</a></li>
                     <li><a href="#">⚙️ Réglages</a></li>
-                    <li><a href="#">🚪 Déconnexion</a></li>
+                    <li><a href="../index.html">🚪 Déconnexion</a></li>
                 </ul>
             </div>
         </div>
+
+        <!-- HEADER -->
+
         <div class="main-content">
             <div class="dashboard-header">
                 <div>
                     <h1>👋 Bonjour <span id="user-name"> Kévin </span> !</h1>
                     <p>Nous sommes le <span id="date-aujourd-hui"></span></p>
                 </div>
+                <!-- NOTIF -->
                 <div class="user-info">
-                    <span class="notif">🔔 <span class="notif-count">3</span></span>
+                    <span class="notif">🔔<span class="notif-count">3</span></span>
+                    <div class="notif-dropdown" id="notifDropdown">
+                        <div class="notif-item">
+                            🚨 Planifier Grue Commerce Polygone
+                        </div>
+                        <div class="notif-item">
+                            📋 Commande Villa Némésis à faire
+                        </div>
+                        <div class="notif-item">
+                            ⚠️ Réunion Résidence Cosco
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="dashboard-grid">
+
+                <!-- CHANTIER -->
+
                 <div class="card">
                     <h2>🏗️ Chantiers En Cours</h2>
                     <div class="chantier-item">
@@ -75,6 +96,9 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ALERTE -->
+
                 <div class="card">
                     <h2>🚨 ALERTES</h2>
                     <div class="alerte-item">
@@ -90,10 +114,13 @@
                         <p>Réunion Exceptionnelle Résidence Cosco</p>
                     </div>
                 </div>
+
+                <!-- PLANNING -->
+
                 <div class="card">
                     <h2>📅 Planning</h2>
                     <div class="planning-item">
-                        <p class="planning-date">Mardi 31 Mars 2026</p>
+                        <p class="planning-date">Lundi 23 Mars 2026</p>
                         <div class="planning-heure">09:30</div>
                         <div class="planning-content">
                             <span class="planning-categorie chantier"></span>
@@ -101,7 +128,7 @@
                         </div>
                     </div>
                     <div class="planning-item">
-                        <p class="planning-date">Vendredi 03 Avril 2026</p>
+                        <p class="planning-date">Mardi 31 Mars 2026</p>
                         <div class="planning-heure">18:00</div>
                         <div class="planning-content">
                             <span class="planning-categorie chantier"></span>
@@ -109,7 +136,7 @@
                         </div>
                     </div>
                     <div class="planning-item">
-                        <p class="planning-date">Lundi 23 Mars 2026</p>
+                        <p class="planning-date">Vendredi 03 Avril 2026</p>
                         <div class="planning-heure">11:30</div>
                         <div class="planning-content">
                             <span class="planning-categorie chantier"></span>
@@ -118,18 +145,33 @@
                     </div>
                 </div>
                 <div class="card">
+
+                    <!-- FINANCIER -->
+
                     <h2>💰Financier</h2>
+                    <div class="kpi">
+                        <h3>45 000 €</h3>
+                        <div class="kpi-label">
+                            <p>CA du mois</p>
+                            <p class="evolution">+12%</p>
+                        </div>
+                    </div>
+                    <div class="kpi">
+                        <h3>3</h3>
+                        <p>Factures en attente</p>
+                    </div>
                     <canvas id="graphFinance"></canvas>
-                    <p>Situation a faire Villa Borgo 90%</p>
-                    <p>Factures en attente : 3</p>
-                    <p>CA du mois : 45 000 €</p>
+                    <div class="devis-stats">
+                        <p>✔ Acceptés : <strong>8</strong></p>
+                        <p>🕓 En attente : <strong>3</strong></p>
+                        <p>❌ Refusés : <strong>2</strong></p>
+                    </div>
+
+
                 </div>
 
             </div>
         </div>
-    </div>
-
-    </div>
     </div>
 </body>
 

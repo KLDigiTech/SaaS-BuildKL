@@ -21,6 +21,7 @@ btnConnexion.addEventListener("click", (e) => {
     return u.login === identifiant && u.mdp === motDePasse;
   });
   if (utilisateurTrouve) {
+    sessionStorage.setItem('user', JSON.stringify(utilisateurTrouve));
     window.location.href = "Pages/dashboard.html";
   } else {
     document.getElementById("erreurMsg").style.display = "block";
@@ -28,3 +29,4 @@ btnConnexion.addEventListener("click", (e) => {
   }
   
 });
+
