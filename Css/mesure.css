@@ -1,18 +1,42 @@
-
-
 /* ===== MESURE ===== */
-
 /* = MAIN = */
-.main-content{
-    padding-top: 20px;
-    margin-left: 40px;
-}
-.mesure-grid{
+
+.main-content {
+    flex: 1;
+    padding: 30px;
     display: flex;
-    align-items: flex-start;
-    gap: 150px;   
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.rdv-card{
+
+.categorie-grid h1 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categorie-grid {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.rdv-card {
+    margin: 30px;
+}
+
+.categorie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin: 20px auto;
+}
+
+.rdv-card {
     background-color: var(--bg-primary);
     border: 3px solid white;
     border-radius: 15px;
@@ -20,23 +44,37 @@
     padding: 15px 15px;
     margin: 10px 0;
     cursor: pointer;
-    transition: 0.3s all ease;
-}
-.rdv-card:hover{
-    background-color: lightgray;
-    transform: translateY(-2px);
-}
-.rdv-jour h2,
-.rdv-jour .planning-date,
-.rdv-libre h2 {
-    padding-left: 15px;
 }
 
-.rdv-adresse {
-    color: var(--color-text);
-    font-size: 0.8rem;
-    opacity: 0.6;
+.cat-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--bg-primary);
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 20px 40px;
+    gap: 20px;
+    justify-content: space-between
 }
+
+.cat-card span {
+    font-size: 2rem;
+}
+
+.cat-card:hover {
+    background-color: lightgray;
+    transform: translateY(-2px)
+}
+
+
+
 /* ===== MEDIA QUERIES ===== */
 
 @media (max-width: 1024px) {}

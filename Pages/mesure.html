@@ -10,17 +10,19 @@
     <script src="../Js/script.js" defer></script>
     <title>BuildKL</title>
 </head>
+<!-- SIDEBAR -->
 
 <body>
     <div class="app">
         <div class="sidebar">
             <div class="sidebar-logo">
-                <img src="../Logo/BK-mini.png" alt="KLDT Logo miniature">
+                <img src="../Logo/logo-noir.png" alt="KLDT Logo miniature">
             </div>
             <div class="nav">
                 <ul>
                     <li><a href="#">📊 Dashboard</a></li>
                     <li><a href="#">🏢 Clients</a></li>
+                    <li><a href="#">🗓️ Planning</a></li>
                     <li><a href="#" class="active">📐 Prise de mesure</a></li>
                     <li><a href="#">📄 Devis</a></li>
                     <li><a href="#">📦 Commandes</a></li>
@@ -31,74 +33,44 @@
                 </ul>
             </div>
         </div>
-        <div class="main-content">
-            <div class="mesure-grid">
-                <div class="rdv-jour">
-                    <h2>Rendez-Vous</h2>
-                    <p class="planning-date">Lundi 23 Mars 2026</p>
-                    <div class="rdv-card">
-                        <div class="planning-heure">11:30</div>
-                        <p>MME PANAFIEU</p>
-                        <p>Mesure Menuiserie Rénovation</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                    <div class="rdv-card">
-                        <div class="planning-heure">18:00</div>
-                        <p>M LEVEL</p>
-                        <p>Mesure VI assurance</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                    <div class="rdv-card">
-                        <div class="planning-heure">19:00</div>
-                        <p>MME NEGRA</p>
-                        <p>Extension Villa</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                </div>
-                <div class="rdv-demain">
-                    <h2>Rendez-Vous J+1</h2>
-                    <p class="planning-date">Mardi 24 Mars 2026</p>
-                    <div class="rdv-card">
-                        <div class="planning-heure">11:30</div>
-                        <p>MME PANAFIEU</p>
-                        <p>Mesure Menuiserie Rénovation</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                    <div class="rdv-card">
-                        <div class="planning-heure">18:00</div>
-                        <p>M LEVEL</p>
-                        <p>Mesure VI assurance</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                    <div class="rdv-card">
-                        <div class="planning-heure">19:00</div>
-                        <p>MME NEGRA</p>
-                        <p>Extension Villa</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                </div>
-                <div class="rdv-libre">
-                    <h2>Sans Rendez-Vous</h2>
-                    <div class="rdv-card">
-                        <p>Boutique ZARA Axa</p>
-                        <p>Remplacement de casse</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                    <div class="rdv-card">
-                        <p>M TIREBOUCHON</p>
-                        <p>Effraction Porte Entrée</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                    <div class="rdv-card">
-                        <p>MME PANTHERA</p>
-                        <p>Problème Volet roulant</p>
-                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
-                    </div>
-                </div>
 
+        <!-- MAIN -->
+        <div class="main-content">
+            <div class="categorie-grid">
+                <h1>Prise de Mesures</h1>
+                <div class="rdv-card">
+                    <div class="planning-heure">11:30</div>
+                    <p>MME PANAFIEU</p>
+                    <p>Mesure Menuiserie Rénovation</p>
+                    <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                </div>
+                <div class="categorie">
+                    <div class="cat-card">
+                        <span>🪟</span>
+                        <p>Vitrage</p>
+                        <span>→</span>
+                    </div>
+                    <div class="cat-card">
+                        <span>🚪</span>
+                        <p>Menuiserie</p>
+                        <span>→</span>
+                    </div>
+                    <div class="cat-card">
+                        <span>🔧</span>
+                        <p>SAV/Réparation</p>
+                        <span>→</span>
+                    </div>
+                    <div class="cat-card">
+                        <span>📐</span>
+                        <p>Neuf/Extension</p>
+                        <span>→</span>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
+
 
 
 </body>
