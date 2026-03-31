@@ -9,14 +9,21 @@
     padding: 30px;
     overflow-y: auto;
 }
-
+#date-aujourd-hui{
+    font-size: 0.9rem;
+    color: var(--color-text);
+    margin-top: 10px;
+}
 .dashboard-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+    font-size: 0.9rem;
 }
-
+.dashboard-header p {
+    padding-left: 47px;
+}
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
