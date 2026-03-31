@@ -29,6 +29,14 @@ body {
     font-weight: bold;
 }
 
+/* ===== MAIN ===== */
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
 /* ===== SIDEBAR ===== */
 
 .app {
@@ -99,6 +107,45 @@ body {
     font-weight: bold;
     color: var(--color-accent);
 }
+
+/* ===== NOTIF ===== */
+
+.user-info {
+    background: white;
+    border-radius: 12px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.user-info:hover {
+    background-color: lightgray;
+}
+.notif-dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 30px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) ;
+    margin: 20px;
+}
+.notif-item{
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgrey;
+}
+.notif-item a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+.notif-item:hover{
+    background-color: lightgray;
+}
+
 
 /* ===== MEDIA QUERIES ===== */
 

@@ -1,14 +1,16 @@
 /* ===== MESURE ===== */
-/* = MAIN = */
 
-.main-content {
-    flex: 1;
-    padding: 30px;
+/* = HEADER = */
+.page-header {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    padding-right: 30px;
 }
+
+/* = MAIN = */
 
 .categorie-grid h1 {
     margin-bottom: 20px;

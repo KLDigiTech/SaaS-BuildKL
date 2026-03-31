@@ -2,11 +2,19 @@
 
 /* ===== PLANNING ===== */
 
-/* = MAIN = */
-.main-content{
-    padding-top: 20px;
-    margin-left: 40px;
+/* = HEADER = */
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    padding-right: 30px;
 }
+
+/* = MAIN = */
+
 .mesure-grid{
     display: flex;
     align-items: flex-start;
