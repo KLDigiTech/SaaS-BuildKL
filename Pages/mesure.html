@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/Pages/mesure.css">
+    <script src="../Js/script.js" defer></script>
+    <title>BuildKL - Mesure</title>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="../Logo/logo-noir.png" alt="KLDT Logo miniature">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="dashboard.html">📊 Dashboard</a></li>
+                    <li><a href="clients.html">🏢 Clients</a></li>
+                    <li><a href="planning.html">🗓️ Planning</a></li>
+                    <li><a href="#" class="active">📐 Prise de mesure</a></li>
+                    <li><a href="#">📄 Devis</a></li>
+                    <li><a href="#">📦 Commandes</a></li>
+                    <li><a href="#">🏗️ Chantier</a></li>
+                    <li><a href="#">🔧 SAV</a></li>
+                    <li><a href="#">⚙️ Réglages</a></li>
+                    <li><a href="../index.html">🚪 Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- MAIN -->
+        <div class="main-content">
+            <div class="page-header">
+                <h1>📐 Prise de Mesures</h1>
+                <!-- NOTIF -->
+                <div class="user-info">
+                    <span class="notif">🔔<span class="notif-count">3</span></span>
+                    <div class="notif-dropdown" id="notifDropdown">
+                        <div class="notif-item">
+                            <a href="chantiers.html">🚨 Planifier Grue Commerce Polygone</a>
+                        </div>
+                        <div class="notif-item">
+                            <a href="commande.html"> 📋 Commande Villa Némésis à faire </a>
+                        </div>
+                        <div class="notif-item">
+                            <a href="planning.html">⚠️ Réunion Résidence Cosco</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="categorie-grid">
+                <!-- RDV EN COURS -->
+                <div class="rdv-card">
+                    <div class="planning-heure">11:30</div>
+                    <p>MME PANAFIEU</p>
+                    <p>Mesure Menuiserie Rénovation</p>
+                    <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                </div>
+                <!-- CATEGORIES -->
+                <div class="categorie">
+                    <a href="Mesure/vitrage.html" class="cat-card">
+                        <span>🪟</span>
+                        <p>Vitrage</p>
+                        <span>→</span>
+                    </a>
+                    <a href="Mesure/menuiserie.html" class="cat-card">
+                        <span>🚪</span>
+                        <p>Menuiserie</p>
+                        <span>→</span>
+                    </a>
+                    <a href="Mesure/sav-reparation.html" class="cat-card">
+                        <span>🔧</span>
+                        <p>SAV/Réparation</p>
+                        <span>→</span>
+                    </a>
+                    <a href="Mesure/neuf-extension.html" class="cat-card">
+                        <span>📐</span>
+                        <p>Neuf/Extension</p>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

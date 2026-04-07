@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/Pages/clients.css">
+    <script src="../Js/script.js" defer></script>
+    <title>BuildKL - Clients</title>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="../Logo/logo-noir.png" alt="KLDT Logo miniature">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="dashboard.html">📊 Dashboard</a></li>
+                    <li><a href="#" class="active">🏢 Clients</a></li>
+                    <li><a href="planning.html">🗓️ Planning</a></li>
+                    <li><a href="mesure.html">📐 Prise de mesure</a></li>
+                    <li><a href="#">📄 Devis</a></li>
+                    <li><a href="#">📦 Commandes</a></li>
+                    <li><a href="#">🏗️ Chantier</a></li>
+                    <li><a href="#">🔧 SAV</a></li>
+                    <li><a href="#">⚙️ Réglages</a></li>
+                    <li><a href="../index.html">🚪 Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+
+        <div class="main-content">
+            <div class="header-client">
+                <h1>CLIENTS</h1>
+                <button type="button">Ajouter un Client</button>
+
+                <!-- NOTIF -->
+
+                <div class="user-info">
+                    <span class="notif">🔔<span class="notif-count">3</span></span>
+                    <div class="notif-dropdown" id="notifDropdown">
+                        <div class="notif-item">
+                            <a href="chantiers.html">🚨 Planifier Grue Commerce Polygone</a>
+                        </div>
+                        <div class="notif-item">
+                            <a href="commande.html"> 📋 Commande Villa Némésis à faire </a>
+                        </div>
+                        <div class="notif-item">
+                            <a href="planning.html">⚠️ Réunion Résidence Cosco</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABLEAU CLIENTS -->
+
+            <table class="table-clients">
+                <thead>
+                    <tr>
+                        <th>Nom / Prénom</th>
+                        <th>Société</th>
+                        <th>Téléphone</th>
+                        <th>Email</th>
+                        <th>Adresse</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>LEVEL Kévin</td>
+                        <td>KLDigiTech</td>
+                        <td>06.49.51.77.62</td>
+                        <td>contact@kldigitech.fr</td>
+                        <td>34000 Montpellier</td>
+                        <td>👁️ ✏️ 🗑️</td>
+                    </tr>
+                    <tr>
+                        <td>PANAFIEU Catherine</td>
+                        <td>PoneyClub</td>
+                        <td>06.87.40.54.57</td>
+                        <td>contact@PoneyClub.fr</td>
+                        <td>34400 Entre-Vignes</td>
+                        <td>👁️ ✏️ 🗑️</td>
+                    </tr>
+                    <tr>
+                        <td>LEVEL PANAFIEU Elio</td>
+                        <td>BabyGym</td>
+                        <td>06.49.51.77.62</td>
+                        <td>contact@babygym.fr</td>
+                        <td>34000 Montpellier</td>
+                        <td>👁️ ✏️ 🗑️</td>
+                    </tr>
+                    <tr>
+                        <td>NEGRA Panthera</td>
+                        <td>WoufClub</td>
+                        <td>06.49.51.77.62</td>
+                        <td>contact@woufclub.fr</td>
+                        <td>34570 Pignan</td>
+                        <td>👁️ ✏️ 🗑️</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+
+
+/* ===== PLANNING ===== */
+
+/* = HEADER = */
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+    padding-right: 30px;
+}
+
+/* = GRILLE PLANNING = */
+
+.mesure-grid{
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;   
+}
+
+/* = CARDS RDV = */
+
+.rdv-card{
+    background-color: var(--bg-primary);
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    padding: 15px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.rdv-card:hover{
+    background-color: lightgray;
+    transform: translateY(-2px);
+}
+
+/* = TITRES ET DATES = */
+
+.rdv-jour h2,
+.rdv-jour .planning-date,
+.rdv-libre h2 {
+    padding-left: 15px;
+}
+
+.rdv-demain h2,
+.rdv-demain .planning-date {
+    padding-left: 15px;
+}
+
+/* = ADRESSE = */
+
+.rdv-adresse {
+    color: var(--color-text);
+    font-size: 0.8rem;
+    opacity: 0.6;
+}

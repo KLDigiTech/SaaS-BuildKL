@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../Css/style.css" />
+    <link rel="stylesheet" href="../../Css/Pages/Mesure/vitrage.css" />
+    <script src="../../Js/script.js" defer></script>
+    <title>BuildKL - Mesure Vitrage</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <div class="app">
+      <div class="sidebar">
+        <div class="sidebar-logo">
+          <img src="../../Logo/logo-noir.png" alt="KLDT Logo miniature" />
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="../dashboard.html">📊 Dashboard</a></li>
+            <li><a href="../clients.html">🏢 Clients</a></li>
+            <li><a href="../planning.html">🗓️ Planning</a></li>
+            <li><a href="../mesure.html" class="active">📐 Prise de mesure</a></li>
+            <li><a href="#">📄 Devis</a></li>
+            <li><a href="#">📦 Commandes</a></li>
+            <li><a href="#">🏗️ Chantier</a></li>
+            <li><a href="#">🔧 SAV</a></li>
+            <li><a href="#">⚙️ Réglages</a></li>
+            <li><a href="../../index.html">🚪 Déconnexion</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MAIN -->
+      <div class="main-content">
+        <div class="page-header">
+          <a href="../mesure.html" class="btn-retour">← Retour</a>
+          <h1>🪟 Vitrage</h1>
+          <!-- NOTIF -->
+          <div class="user-info">
+            <span class="notif">🔔<span class="notif-count">3</span></span>
+            <div class="notif-dropdown" id="notifDropdown">
+              <div class="notif-item">
+                <a href="chantiers.html">🚨 Planifier Grue Commerce Polygone</a>
+              </div>
+              <div class="notif-item">
+                <a href="commande.html"> 📋 Commande Villa Némésis à faire </a>
+              </div>
+              <div class="notif-item">
+                <a href="planning.html">⚠️ Réunion Résidence Cosco</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="categorie-grid">
+          <!-- RDV EN COURS -->
+          <div class="rdv-card">
+            <div class="planning-heure">11:30</div>
+            <p>MME PANAFIEU</p>
+            <p>Mesure Menuiserie Rénovation</p>
+            <p class="rdv-adresse">
+              215, Avenue Saint Christophe 34400 entre vignes
+            </p>
+          </div>
+          <form class="vitrage-form">
+            <div class="form-group">
+              <input type="text" id="repere" placeholder=" " />
+              <label for="repere">Repère : </label>
+            </div>
+            <div class="select-group">
+              <label for="materiau">Matériau : </label>
+              <select name="materiau" id="liste-materiau">
+                <option value="">-- Choisir --</option>
+                <option value="aluminium">Aluminium</option>
+                <option value="pvc">PVC</option>
+                <option value="bois">Bois</option>
+                <option value="acier">Acier</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="select-group">
+              <label for="type-ouverture">Type D'ouverture : </label>
+              <select name="type-ouverture" id="liste-ouverture">
+                <option value="">-- Choisir --</option>
+                <option value="Fixe">Fixe</option>
+                <option value="OF">OF</option>
+                <option value="OB">OB</option>
+                <option value="PF">PF</option>
+                <option value="Coulissant">Coulissant</option>
+                <option value="Mur-Rideau">Mur Rideau</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="number" id="largeur" placeholder=" " min="0" />
+              <label for="largeur">Largeur : </label>
+            </div>
+            <div class="form-group">
+              <input type="number" id="hauteur" placeholder=" " min="0" />
+              <label for="hauteur">Hauteur : </label>
+            </div>
+            <div class="select-group">
+              <label for="type-vitrage">Type de Vitrage : </label>
+              <select name="type-vitrage" id="liste-vitrage">
+                <option value="">-- Choisir --</option>
+                <option value="simple">Simple</option>
+                <option value="double">Double</option>
+                <option value="triple">Triple</option>
+                <option value="feuillete-simple">Simple Feuilleté</option>
+                <option value="feuillete-double">Double Feuilleté</option>
+                <option value="feuillete-triple">Triple Feuilleté</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="number" id="epaisseur" placeholder=" " min="0" />
+              <label for="epaisseur">Épaisseur : </label>
+            </div>
+            <div class="select-group">
+              <label for="note">Note : </label>
+              <textarea name="text" id="note"></textarea>
+            </div>
+            <div class="btn-group">
+              <button type="submit">Enregistrer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
