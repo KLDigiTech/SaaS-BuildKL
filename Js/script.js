@@ -7,7 +7,7 @@ if (btnDeconnexion) {
     btnDeconnexion.addEventListener('click', (e) => {
         e.preventDefault();
         sessionStorage.clear();
-        window.location.href = '../index.html';
+        window.location.href = '../../index.html';
     });
 }
 

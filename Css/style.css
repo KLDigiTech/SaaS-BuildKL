@@ -34,7 +34,7 @@ body {
 .main-content {
     flex: 1;
     padding: 30px;
-    overflow-y: auto;
+    overflow: visible;
 }
 
 /* ===== SIDEBAR ===== */
@@ -117,6 +117,7 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     cursor: pointer;
     transition: 0.3s all ease;
+    
 }
 .user-info:hover {
     background-color: lightgray;
@@ -125,14 +126,15 @@ body {
     display: none;
     position: absolute;
     top: 70px;
-    right: 30px;
+    right: 40px;
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 12px;
     width: 350px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08) ;
-    margin: 20px;
+    margin: 25px;
     overflow: hidden;
+    z-index: 9999;
 }
 .notif-item{
     padding: 10px 20px;
