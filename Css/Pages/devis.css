@@ -1,0 +1,7 @@
+.devis-form {
+    display: none;
+}
+.devis-visuel,
+.devis-info{
+    flex: 1;
+}

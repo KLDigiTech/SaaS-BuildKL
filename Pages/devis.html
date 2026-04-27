@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/Pages/devis.css">
+    <script src="../Js/script.js" defer></script>
+    <script src="../Js/devis.js" defer></script>
+    <title>BuildKL - Devis</title>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="../Logo/logo-noir.png" alt="KLDT Logo miniature">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="dashboard.html">📊 Dashboard</a></li>
+                    <li><a href="clients.html">🏢 Clients</a></li>
+                    <li><a href="planning.html">🗓️ Planning</a></li>
+                    <li><a href="mesure.html">📐 Prise de mesure</a></li>
+                    <li><a href="devis.html" class="active">📄 Devis</a></li>
+                    <li><a href="commandes.html">📦 Commandes</a></li>
+                    <li><a href="chantiers.html">🏗️ Chantier</a></li>
+                    <li><a href="sav.html">🔧 SAV</a></li>
+                    <li><a href="reglage.html">⚙️ Réglages</a></li>
+                    <li><a href="../index.html">🚪 Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- HEADER -->
+        <div class="main-content">
+            <header>
+                <h1>Devis</h1>
+                <div class="header-actions">
+                    <button id="add-devis-btn">+ Nouveau Devis</button>
+                </div>
+            </header>
+
+            <!-- CONTENT -->
+            <div class="content">
+                <div class="devis-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Client</th>
+                                <th>Date de création</th>
+                                <th>Montant</th>
+                                <th>Statut</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="devis-table-body">
+                            <!-- Les devis seront ajoutés ici dynamiquement -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="devis-form">
+                    <div class="devis-visuel">
+                        <h2>Elevation</h2>
+                        <select name="" id=""></select>
+                    </div>
+                    <div class="devis-info">
+                        <h2>Informations</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
