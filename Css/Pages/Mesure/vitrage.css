@@ -1,0 +1,198 @@
+/* ===== VITRAGE ===== */
+
+/* ===== HEADER ===== */
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  padding-right: 30px;
+}
+
+.btn-retour {
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.btn-retour:hover {
+  background-color: lightgray;
+  transform: translateY(-2px);
+}
+
+/* ===== GRILLE ===== */
+
+.categorie-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 30px;
+}
+
+/* ===== COLONNE GAUCHE ===== */
+
+.rdv-card {
+  background-color: var(--bg-primary);
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 15px;
+  margin: 10px 15px;
+  align-self: start;
+}
+.col-gauche {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+/* ===== FORMULAIRE ===== */
+
+.vitrage-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--bg-primary);
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px 15px;
+  margin: 10px 15px;
+}
+
+.form-group {
+  position: relative;
+  margin-top: 20px;
+}
+
+.form-group label {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.form-group input:focus~label,
+.form-group input:not(:placeholder-shown)~label {
+  top: -10px;
+  font-size: 1rem;
+  color: var(--color-primary);
+  background: white;
+  padding: 0 5px;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.select-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.select-group label {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+/* ===== BOUTONS ===== */
+
+button {
+  width: 200px;
+  height: 40px;
+  background-color: var(--color-accent);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--bg-primary);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s all ease;
+}
+
+button:hover {
+  background-color: #94A3B8;
+  transform: translateY(-2px);
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* ===== COLONNE DROITE ===== */
+
+.photo-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.col-droite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== LIGHTBOX ===== */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80vh;
+  border-radius: 10px;
+}
+
+.lightbox-fermer {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.lightbox-fleche {
+  color: white;
+  font-size: 4rem;
+  cursor: pointer;
+  user-select: none;
+}

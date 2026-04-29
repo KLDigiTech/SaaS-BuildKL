@@ -1,0 +1,17 @@
+.devis-form {
+    display: none;
+}
+.devis-visuel,
+.devis-info{
+    flex: 1;
+}
+#vs-options {
+    display: none;
+}
+#poignee-options {
+    display: none;
+}
+.lg_tab,
+.ht_tab {
+    display: none;
+}

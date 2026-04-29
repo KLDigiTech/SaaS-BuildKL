@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/Pages/reglage.css">
+    <script src="../Js/script.js" defer></script>
+    <script src="../Js/reglage.js" defer></script>
+    <title>BuildKL - Réglages</title>
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="../Logo/logo-noir.png" alt="KLDT Logo miniature">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="dashboard.html">📊 Dashboard</a></li>
+                    <li><a href="clients.html">🏢 Clients</a></li>
+                    <li><a href="planning.html">🗓️ Planning</a></li>
+                    <li><a href="mesure.html">📐 Prise de mesure</a></li>
+                    <li><a href="devis.html">📄 Devis</a></li>
+                    <li><a href="commandes.html">📦 Commandes</a></li>
+                    <li><a href="chantiers.html">🏗️ Chantier</a></li>
+                    <li><a href="sav.html">🔧 SAV</a></li>
+                    <li><a href="reglage.html" class="active">⚙️ Réglages</a></li>
+                    <li><a href="../index.html">🚪 Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- HEADER -->
+
+        <div class="main-content">
+            <h1>Réglages</h1>
+            <p>Bienvenue dans la section des réglages !</p>
+            <div class="content">
+                <div class="settings-section">
+                    <h2>Catalogue produits</h2>
+                    <select name="categorie" id="categorie">
+                        <option value="">Choisir une Categorie</option>
+                        <option value="menuiserie">Menuiserie</option>
+                        <option value="vitrages">Vitrages</option>
+                        <option value="accessoires">Accessoires</option>
+                        <option value="poses">Poses</option>
+                        <option value="deplacement">Déplacement</option>
+                        <option value="autres">Autres</option>
+                    </select>
+                    <input type="text" placeholder="Nom du produit" id="product-name">
+                    <input type="number" placeholder="Prix HT €" id="product-price">
+                    <button type="button" id="btn-ajout">Ajouter au Catalogue</button>
+                    <ul id="catalogue-list">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/Pages/planning.css">
+    <script src="../Js/script.js" defer></script>
+    <title>BuildKL - Planning</title>
+</head>
+
+<body>
+    <!-- SIDEBAR -->
+    <div class="app">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <img src="../Logo/logo-noir.png" alt="KLDT Logo miniature">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="dashboard.html">📊 Dashboard</a></li>
+                    <li><a href="clients.html">🏢 Clients</a></li>
+                    <li><a href="planning.html" class="active">🗓️ Planning</a></li>
+                    <li><a href="mesure.html">📐 Prise de mesure</a></li>
+                    <li><a href="devis.html">📄 Devis</a></li>
+                    <li><a href="commandes.html">📦 Commandes</a></li>
+                    <li><a href="chantiers.html">🏗️ Chantier</a></li>
+                    <li><a href="sav.html">🔧 SAV</a></li>
+                    <li><a href="reglage.html">⚙️ Réglages</a></li>
+                    <li><a href="../index.html">🚪 Déconnexion</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- HEADER -->
+            <div class="page-header">
+                <h1>🗓️ Planning</h1>
+                <!-- NOTIF -->
+                <div class="user-info">
+                    <span class="notif">🔔<span class="notif-count">3</span></span>
+                    <div class="notif-dropdown" id="notifDropdown">
+                        <div class="notif-item">
+                            <a href="chantiers.html">🚨 Planifier Grue Commerce Polygone</a>
+                        </div>
+                        <div class="notif-item">
+                            <a href="commande.html">📋 Commande Villa Némésis à faire</a>
+                        </div>
+                        <div class="notif-item">
+                            <a href="planning.html">⚠️ Réunion Résidence Cosco</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mesure-grid">
+                <!-- RDV DU JOUR -->
+                <div class="rdv-jour">
+                    <h2>Rendez-Vous</h2>
+                    <p class="planning-date">Lundi 23 Mars 2026</p>
+                    <div class="rdv-card">
+                        <div class="planning-heure">11:30</div>
+                        <p>MME PANAFIEU</p>
+                        <p>Mesure Menuiserie Rénovation</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                    <div class="rdv-card">
+                        <div class="planning-heure">18:00</div>
+                        <p>M LEVEL</p>
+                        <p>Mesure VI assurance</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                    <div class="rdv-card">
+                        <div class="planning-heure">19:00</div>
+                        <p>MME NEGRA</p>
+                        <p>Extension Villa</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                </div>
+                <!-- RDV J+1 -->
+                <div class="rdv-demain">
+                    <h2>Rendez-Vous J+1</h2>
+                    <p class="planning-date">Mardi 24 Mars 2026</p>
+                    <div class="rdv-card">
+                        <div class="planning-heure">11:30</div>
+                        <p>MME PANAFIEU</p>
+                        <p>Mesure Menuiserie Rénovation</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                    <div class="rdv-card">
+                        <div class="planning-heure">18:00</div>
+                        <p>M LEVEL</p>
+                        <p>Mesure VI assurance</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                    <div class="rdv-card">
+                        <div class="planning-heure">19:00</div>
+                        <p>MME NEGRA</p>
+                        <p>Extension Villa</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                </div>
+                <!-- SANS RDV -->
+                <div class="rdv-libre">
+                    <h2>Sans Rendez-Vous</h2>
+                    <div class="rdv-card">
+                        <p>Boutique ZARA Axa</p>
+                        <p>Remplacement de casse</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                    <div class="rdv-card">
+                        <p>M TIREBOUCHON</p>
+                        <p>Effraction Porte Entrée</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                    <div class="rdv-card">
+                        <p>MME PANTHERA</p>
+                        <p>Problème Volet roulant</p>
+                        <p class="rdv-adresse">215, Avenue Saint Christophe 34400 entre vignes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
