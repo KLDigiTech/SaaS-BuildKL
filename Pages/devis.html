@@ -80,15 +80,6 @@
                             <option value="porte 1 vantail">Porte 1 Vantail</option>
                         </select>
                         <input type="text" placeholder="Repere" id="repere">
-                        <div id="pose-options">
-                            <label><input type="checkbox" id="tunnel"> Tunnel</label>
-                            <label><input type="checkbox" id="renovation"> Rénovation</label>
-                            <label><input type="checkbox" id="applique"> Applique</label>
-                        </div>
-                        <input type="text" placeholder="Largeur (mm)" id="largeur">
-                        <p id="note-largeur-tableau" class="lg_tab">Largeur tableau</p>
-                        <input type="text" placeholder="Hauteur (mm)" id="hauteur">
-                        <p id="note-hauteur-tableau" class="ht_tab">Hauteur tableau</p>
                         <div id="vs-options">
                             <label><input type="checkbox" id="vs-gauche"> VS Gauche</label>
                             <label><input type="checkbox" id="vs-droite"> VS Droite</label>
@@ -96,6 +87,25 @@
                         <div id="poignee-options">
                             <label><input type="checkbox" id="poignee-gauche"> Poignée Gauche</label>
                             <label><input type="checkbox" id="poignee-droite"> Poignée Droite</label>
+                        </div>
+                        <div id="pose-options">
+                            <label><input type="checkbox" id="tunnel"> Tunnel</label>
+                            <label><input type="checkbox" id="renovation"> Rénovation</label>
+                            <label><input type="checkbox" id="applique"> Applique</label>
+                        </div>
+                        <input type="text" placeholder="Largeur (mm)" id="largeur_tab">
+                        <p id="note-largeur-tableau" class="lg_tab">Largeur tableau</p>
+                        <input type="text" placeholder="Hauteur (mm)" id="hauteur_tab">
+                        <p id="note-hauteur-tableau" class="ht_tab">Hauteur tableau</p>
+
+                        <input type="text" placeholder="Largeur (mm)" id="largeur_trou">
+                        <p id="note-largeur-trou" class="lg_trou">Largeur trou</p>
+                        <input type="text" placeholder="Hauteur (mm)" id="hauteur_trou">
+                        <p id="note-hauteur-trou" class="ht_trou">Hauteur trou</p>
+                        <div id="cochonnet-options">
+                            <label><input type="checkbox" id="cochonnet"> Découpe cochonnet</label>
+                            <input type="text" placeholder="feuillure" id="feuillure">
+                            <p class="feuillure_tab">Épaisseur feuillure contre Cochonnet</p>
                         </div>
                     </div>
                 </div>

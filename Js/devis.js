@@ -1,6 +1,8 @@
 const typeMenuiserie = document.getElementById('type-menuiserie');
-const largeurInput = document.getElementById('largeur');
-const hauteurInput = document.getElementById('hauteur');
+const largeurInput = document.getElementById('largeur_tab');
+const hauteurInput = document.getElementById('hauteur_tab');
+const largeurTrou = document.getElementById('largeur_trou');
+const hauteurTrou = document.getElementById('hauteur_trou');
 const vsGauche = document.getElementById('vs-gauche');
 const vsDroite = document.getElementById('vs-droite');
 const sensOuverture = document.getElementById('poignee-options');
@@ -8,7 +10,9 @@ const ouvGauche = document.getElementById('poignee-gauche');
 const ouvDroite = document.getElementById('poignee-droite');
 const poseTunnel = document.getElementById('tunnel');
 const poseReno = document.getElementById('renovation');
+const cochonnet = document.getElementById('cochonnet');
 const poseApplique = document.getElementById('applique');
+const feuillure = document.getElementById('feuillure');
 
 document.getElementById('add-devis-btn').addEventListener('click', function () {
 
@@ -151,30 +155,59 @@ ouvDroite.addEventListener('change', function () {
     if (ouvDroite.checked) ouvGauche.checked = false;
     dessinerElevation(typeMenuiserie.value, largeurInput.value, hauteurInput.value, vsGauche.checked, vsDroite.checked, ouvGauche.checked, ouvDroite.checked);
 });
+function resetPose() {
+    largeurInput.style.display = 'none';
+    hauteurInput.style.display = 'none';
+    largeurTrou.style.display = 'none';
+    hauteurTrou.style.display = 'none';
+    document.querySelector('.lg_tab').style.display = 'none';
+    document.querySelector('.ht_tab').style.display = 'none';
+    document.querySelector('.lg_trou').style.display = 'none';
+    document.querySelector('.ht_trou').style.display = 'none';
+    document.getElementById('cochonnet-options').style.display = 'none';
+}
+
 poseTunnel.addEventListener('change', function () {
+    resetPose();
     if (poseTunnel.checked) {
         poseReno.checked = false;
         poseApplique.checked = false;
+        largeurInput.style.display = 'block';
+        hauteurInput.style.display = 'block';
         document.querySelector('.lg_tab').style.display = 'block';
         document.querySelector('.ht_tab').style.display = 'block';
-    } else {
-        document.querySelector('.lg_tab').style.display = 'none';
-        document.querySelector('.ht_tab').style.display = 'none';
     }
 });
+
 poseReno.addEventListener('change', function () {
+    resetPose();
     if (poseReno.checked) {
         poseTunnel.checked = false;
         poseApplique.checked = false;
-        document.querySelector('.lg_tab').style.display = 'none';
-        document.querySelector('.ht_tab').style.display = 'none';
+        largeurTrou.style.display = 'block';
+        hauteurTrou.style.display = 'block';
+        document.querySelector('.lg_trou').style.display = 'block';
+        document.querySelector('.ht_trou').style.display = 'block';
+        document.getElementById('cochonnet-options').style.display = 'block';
+        document.getElementById('feuillure').style.display = 'block';
+        document.querySelector('.feuillure_tab').style.display = 'block';
     }
 });
+
 poseApplique.addEventListener('change', function () {
+    resetPose();
     if (poseApplique.checked) {
         poseReno.checked = false;
         poseTunnel.checked = false;
-        document.querySelector('.lg_tab').style.display = 'none';
-        document.querySelector('.ht_tab').style.display = 'none';
+    }
+});
+
+cochonnet.addEventListener('change', function () {
+    if (cochonnet.checked) {
+        document.querySelector('.feuillure_tab').style.display = 'none';
+        document.getElementById('feuillure').style.display = 'none';
+    } else {
+        document.querySelector('.feuillure_tab').style.display = 'block';
+        document.getElementById('feuillure').style.display = 'block';
     }
 });

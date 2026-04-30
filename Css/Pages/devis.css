@@ -15,3 +15,20 @@
 .ht_tab {
     display: none;
 }
+.lg_trou,
+.ht_trou {
+    display: none;
+}
+#cochonnet-options {
+    display: none;
+}
+#largeur_trou,
+#hauteur_trou{
+    display: none;
+}
+.feuillure_tab {
+    display: none;
+}
+#feuillure {
+    display: none;
+}
