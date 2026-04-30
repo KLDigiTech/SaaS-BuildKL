@@ -67,10 +67,36 @@
                 <div class="devis-form">
                     <div class="devis-visuel">
                         <h2>Elevation</h2>
-                        <select name="" id=""></select>
+                        <div id="elevation"></div>
                     </div>
                     <div class="devis-info">
                         <h2>Informations</h2>
+                        <select name="type" id="type-menuiserie">
+                            <option value="" disabled selected>Choisir un Type</option>
+                            <option value="fixe">Fixe</option>
+                            <option value="Of 1 vantail">Of 1 Vantail</option>
+                            <option value="Of 2 vantaux">Of 2 Vantaux</option>
+                            <option value="coulissant 2 vantaux">Coulissant 2 Vantaux</option>
+                            <option value="porte 1 vantail">Porte 1 Vantail</option>
+                        </select>
+                        <input type="text" placeholder="Repere" id="repere">
+                        <div id="pose-options">
+                            <label><input type="checkbox" id="tunnel"> Tunnel</label>
+                            <label><input type="checkbox" id="renovation"> Rénovation</label>
+                            <label><input type="checkbox" id="applique"> Applique</label>
+                        </div>
+                        <input type="text" placeholder="Largeur (mm)" id="largeur">
+                        <p id="note-largeur-tableau" class="lg_tab">Largeur tableau</p>
+                        <input type="text" placeholder="Hauteur (mm)" id="hauteur">
+                        <p id="note-hauteur-tableau" class="ht_tab">Hauteur tableau</p>
+                        <div id="vs-options">
+                            <label><input type="checkbox" id="vs-gauche"> VS Gauche</label>
+                            <label><input type="checkbox" id="vs-droite"> VS Droite</label>
+                        </div>
+                        <div id="poignee-options">
+                            <label><input type="checkbox" id="poignee-gauche"> Poignée Gauche</label>
+                            <label><input type="checkbox" id="poignee-droite"> Poignée Droite</label>
+                        </div>
                     </div>
                 </div>
             </div>
